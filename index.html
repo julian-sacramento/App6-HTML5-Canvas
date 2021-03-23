@@ -78,13 +78,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<canvas id="a" width="100%" height="100%" style="border:1px solid #000000;"> <!--code for the rectangle with the solid line border-->
 
 		</script>
-	(function() {
-		function resizeCanvas() {
-			htmlCanvas.width = window.innerWidth; <!--code to readjust the width automatically-->
-			htmlCanvas.height = window.innerHeight; <!--code to readjust the height automatically-->
-            		redraw();
-		}
-	})();
+	
+	canvas {
+		width: auto;
+		height: auto;
+	}
+	
 	</script>
 		
 	</canvas>
