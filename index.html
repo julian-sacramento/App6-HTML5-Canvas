@@ -77,6 +77,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	<canvas id="a" width="auto" height="auto" style="border:1px solid #000000;"> <!--code for the rectangle with the solid line border-->
 		
+	var $canvas = $('#canvas'),
+		$window = $(window);
+	$canvas.attr({
+		width: $window.width(),
+		height: $window.height()
+	});	
+	
 	</canvas>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
