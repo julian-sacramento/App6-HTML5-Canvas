@@ -63,15 +63,15 @@ function draw_b() {
 function draw_c() {
 	var c_canvas = document.getElementById("a");
 	var c_context = c_canvas.getContext("2d");
+	var dog = new Image();
+	dog.src = "https://i.pinimg.com/564x/f7/de/21/f7de215f1e4f95bf13207178e9fb66a3.jpg";
+	dog.onload = function()
 	c_context.draw_image(dog, 100, 100, 100, 100);
 }
 	
 function draw_d() {
 	var d_canvas = document.getElementById("a")
 	var d_context = d_canvas.getContext("2d");
-	var dog = new Image();
-	dog.src = "https://i.pinimg.com/564x/f7/de/21/f7de215f1e4f95bf13207178e9fb66a3.jpg";
-	dog.onload = function()
 	d_context.clearRect(1, 1, 200, 200);
 }
 </script>
