@@ -42,10 +42,17 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
+var dog = new Image();
+	dog.src = "https://i.pinimg.com/564x/f7/de/21/f7de215f1e4f95bf13207178e9fb66a3.jpg";
+	
+dog.onload = function() {
+	draw_c(dog)
+}
+	
 function draw_a() { // code for the function that draws the rectangle
 	var a_canvas = document.getElementById("a");
 	var a_canvas = a_canvas.getContext("2d");
-	a_context.fillRect(15, 15, 30, 50); // code for the size of the rectangle
+	a_contect.fillRect(15, 15, 30, 50); // code for the size of the rectangle
 }
 	
 function draw_b() {
@@ -54,10 +61,10 @@ function draw_b() {
 	b_context.fillText("Julian Sarmiento", 50, 80);
 }
 
-function draw_c() {
+dog.onload = function draw_c() {
 	var c_canvas = document.getElementById("a");
 	var c_context = c_canvas.getContext("2d");
-	c_context.draw_image(img, 100, 100, 100, 100);
+	c_context.draw_image(dog, 100, 100, 100, 100);
 }
 	
 function draw_d() {
