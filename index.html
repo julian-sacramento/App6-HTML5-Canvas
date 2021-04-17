@@ -54,13 +54,13 @@ function draw_a() { // code for the function that draws the rectangle
 	a_context.fillRect(15, 15, 30, 50); // code for the size of the rectangle
 }
 	
-function draw_b() {
+function draw_b() { //code for my name to pop up within the canvas
 	var b_canvas = document.getElementById("a");
 	var b_context = b_canvas.getContext("2d");
-	b_context.fillText("Julian Sarmiento", 50, 80);
+	b_context.fillText("Julian Sarmiento", 50, 80); 
 }
 
-function draw_c() {
+function draw_c() { //code function for the image to pop up in my canvas
 	var c_canvas = document.getElementById("a");
 	var c_context = c_canvas.getContext("2d");
 	var dog = new Image();
@@ -70,7 +70,7 @@ function draw_c() {
 	};
 }
 	
-function draw_d() {
+function draw_d() { //this is the function so that the canvas can be cleared
 	var d_canvas = document.getElementById("a");
 	var d_context = d_canvas.getContext("2d");
 	d_context.clearRect(1, 1, 200, 200);
